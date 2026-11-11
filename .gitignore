@@ -1,0 +1,31 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE Folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment & Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Dependencies & Build Outputs
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs & Databases
+*.log
+npm-debug.log*
+*.sqlite
+*.db
