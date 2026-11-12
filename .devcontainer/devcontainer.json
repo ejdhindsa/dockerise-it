@@ -1,0 +1,24 @@
+{
+  "name": "docker-workshop",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "moby": false
+    }
+  },
+  "forwardPorts": [3000, 8001, 8002],
+  "portsAttributes": {
+    "3000": {
+      "label": "RPS Arena UI",
+      "onAutoForward": "notify"
+    },
+    "8001": {
+      "label": "JS Bot",
+      "onAutoForward": "silent"
+    },
+    "8002": {
+      "label": "Python Bot",
+      "onAutoForward": "silent"
+    }
+  }
+}
